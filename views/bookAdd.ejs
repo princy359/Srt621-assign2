@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add a Book</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>Fill in the Details to add a book</h1>
+    <form id="form" action="/create" method="post">
+      <label for="bname">Book:</label>
+      <input type="text" required id="bname" name="bname" /><br /><br />
+      <label for="author">Author:</label>
+      <input type="text" required id="author" name="author" /><br /><br />
+      <label for="link">Amazon Link:</label>
+      <input type="url" required id="link" name="link" /><br /><br />
+      <input type="submit" value="Add Book" />
+    </form>
+    <div class="nav">
+      <a href="/home">List all Books</a>&thinsp;&thinsp;&thinsp;&thinsp;
+      <a href="/AddNewBook">Add a Book</a>&thinsp;&thinsp;&thinsp;&thinsp;
+      <a href="/DeleteABook">Delete a Book</a>&thinsp;&thinsp;&thinsp;&thinsp;
+    </div>
+  </body>
+</html>

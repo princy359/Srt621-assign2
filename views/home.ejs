@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Princy's LAB 10</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Click on any Book to see the details</h1>
+    <div class="list">
+        <% books.forEach(i=> { %>
+        <a href="/books/<%=i.id %>"> <p id="book"><%= i.book %></p></a>
+        <% }); %>
+      </div>
+    </div>
+    <div class="nav">
+      <a href="/home">List all Books</a>&thinsp;&thinsp;&thinsp;&thinsp;
+      <a href="/AddNewBook">Add a Book</a>&thinsp;&thinsp;&thinsp;&thinsp;
+      <a href="/DeleteABook">Delete a Book</a>&thinsp;&thinsp;&thinsp;&thinsp;
+    </div>  
+  </body>
+</html>
